@@ -1,0 +1,20 @@
+strict digraph  {
+Survived;
+Pclass;
+Sex;
+Age;
+SibSp;
+Parch;
+Fare;
+Pclass -> Age  [origin=learned, weight="5.416071829739479"];
+Pclass -> Fare  [origin=learned, weight="-14.25094835798153"];
+Sex -> Pclass  [origin=learned, weight="1.9612868992525074"];
+Sex -> Age  [origin=learned, weight="15.093280533019355"];
+Sex -> Survived  [origin=unknown];
+Age -> Fare  [origin=learned, weight="0.8868948035637376"];
+Age -> Survived  [origin=unknown];
+SibSp -> Age  [origin=learned, weight="-2.3941882023445102"];
+SibSp -> Fare  [origin=learned, weight="11.379387128775761"];
+Parch -> Age  [origin=learned, weight="1.272125513706115"];
+Parch -> Fare  [origin=learned, weight="13.65133594895557"];
+}
